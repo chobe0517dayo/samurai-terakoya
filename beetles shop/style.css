@@ -1,0 +1,611 @@
+/* pcスマホ共通スタイル*/
+
+body {
+    font-family: "Source Sans pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+}
+
+p {
+    font-size: 15px;
+}
+
+/*===================
+pc用スタイル
+===================*/
+
+@media screen and (min-width: 768px) {
+
+/* 横幅設定 */
+body {
+    max-width: 1152px;
+    min-width: 960px;
+    margin: 0 auto 0 auto;
+}
+
+/* ヘッダー */
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #004d3b;
+    width: 1152px;
+    
+}
+
+/* ロゴ */
+#logo {
+    font-size: 20px;
+    text-align: left;
+    padding: 15px 0px 15px 15px;
+    color: #fefefe;
+    text-decoration-line: none;
+}
+
+/* ナビゲーションのレイアウト*/
+#nav-pc {
+    text-align: right;
+    font-size: 18px;
+    padding: 15px;
+}
+
+/* ナビゲーションのリンクの装飾 */
+#nav-pc > a {
+    text-decoration: none;
+    margin-left: 20px;
+}
+#nav-pc >a:link {
+    color: #fefefe;
+}
+#nav-pc > a:visited {
+    color: #fefefe;
+}
+#nav-pc > a:hover {
+    color: #fefefe;
+    text-decoration: underline;
+}
+#nav-pc > a:active {
+    color: #fefefe;
+}
+
+/* スマホ用ナビを非表示 */
+#nav-sp,
+#menu-sp {
+    display: none;
+}
+
+/* メインビジュアル */
+#main-visual {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.slider {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    
+}
+
+.slider > h1 {
+    position: absolute;
+    color: #fefefe;
+    font-size: 60px;
+    font-weight: bold;
+    margin: 200px 0 0 150px;
+    
+}
+
+.main-visual-img {
+    width: 100%;
+    
+}
+
+/* 丸太のタイトル */
+.maruta-title {
+    position: absolute;
+    top: 0;
+    left: 80px;
+}
+
+.index-h2 {
+    position: absolute;
+    top: 0;
+    left: 95px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fefefe;
+}
+
+.index-h2-img {
+    max-width: 400px;
+}
+
+
+/*ショップ紹介*/
+#overview {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 550px;
+}
+
+.index-p {
+    position: absolute;
+    padding: 120px 100px;
+    font-size: 18px;
+}
+
+/*新着情報*/
+#introduction {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+    width: 1152px;
+}
+
+.introduction-div {
+    width: 500px;
+    height: 250px;
+    position: relative;
+    top: 150px;
+    left: 10px;
+    margin: 0px auto 50px 10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+}
+
+.introduction-img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.introduction-h3 {
+    position: absolute;
+    top: 80px;
+    left: 250px;
+    margin-right: 30px;
+    font-size: 21px;
+    font-weight: bold;
+    color: #0e0e0e;
+}
+
+.introduction-ymd {
+    position: absolute;
+    top: 50px;
+    left: 250px;
+    font-size: 16px;
+    color: #0e0e0e;
+}
+
+/* 昆虫紹介*/
+
+#introduction-2 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    margin: 50px auto 0px auto;
+}
+
+#introduction-2-div {
+    position: relative;
+    top: 150px;
+    left: 50px;
+    display: flex;
+}
+
+#introduction-2-div > div > a {
+    width: 300px;
+    height: 300px;
+    margin: 0px 30px 0px 30px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+#introduction-2-div > div > h3 {
+    position: absolute;
+    top: 95px;
+    font-size: 35px;
+    color: #fefefe;
+    font-weight: bold;
+    margin-left: 80px;
+    z-index: 11;
+}
+
+
+/*お知らせ*/
+
+#notice {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 30px;
+    width: 1152px;
+    height: 700px;
+}
+
+#notice-div {
+    position: relative;
+    top: 150px;
+    left: 80px;
+}
+
+#notice-div > a {
+    display: flex;
+    margin-top: 30px;
+    width: 950px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+#notice-div >a:link {
+    color: #0e0e0e;
+}
+#notice-div > a:visited {
+    color: #0e0e0e;
+}
+#notice-div > a:hover {
+    color: #0e0e0e;
+    text-decoration: underline;
+}
+#notice-div > a:active {
+    color: #0e0e0e;
+}
+
+#notice-div > a > img {
+    width: 200px;
+}
+
+#notice-div > a > h3 {
+    position: relative;
+    top: 10px;
+    left: 50px;
+}
+
+#notice-div > a > h4 {
+    position: relative;
+    top: 10px;
+    left:60px;
+}
+
+#notice-div > a > p {
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 270px;
+}
+
+/* お客様の声 */
+
+#voice {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 1152px;
+    height: 700px;
+}
+
+#voice-div {
+    position: relative;
+    top: 150px;
+    left: 80px;
+}
+    
+#voice-div > a {
+    display: flex;
+    margin-top: 30px;
+    width: 950px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+#voice-div >a:link {
+    color: #0e0e0e;
+}
+#voice-div > a:visited {
+    color: #0e0e0e;
+}
+#voice-div > a:hover {
+    color: #0e0e0e;
+    text-decoration: underline;
+}
+#voice-div > a:active {
+    color: #0e0e0e;
+}
+
+#voice-div > a > img {
+    width: 200px;
+}
+
+#voice-div > a > h3 {
+    position: relative;
+    top: 8px;
+    left: 50px;
+}
+
+#voice-div > a > h4 {
+    position: relative;
+    top: 8px;
+    left:60px;
+}
+
+#voice-div > a > p {
+    position: absolute;
+    margin-top: 65px;
+    margin-left: 270px;
+}
+
+/*フッター*/
+#footer {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #004d3b;
+    width: 1152px;
+    height: 320px;
+}
+
+#footer-nav {
+	color: #fefefe;		
+	font-size: 0.8rem;	
+	padding: 50px 40px;	
+	display: flex;		
+	justify-content: space-between;	
+	align-items: flex-start;		
+}
+
+/*ボックス内のリンクテキスト設定*/
+#footer-nav a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/*ulタグ（メニューの１列あたり）*/
+#footer-nav ul {
+	margin: 0;
+    list-style: none;
+	padding: 0 10px;
+	flex: 1;
+}
+
+/*メニューの見出し(title)*/
+.footer-nav-title {
+	font-weight: bold;		
+	color: #fefefe;			
+	padding-bottom: 10px;	
+}
+
+
+/* sns */
+#footer-sns {
+    display: flex;
+    justify-content: center;
+}
+
+#footer-sns > a {
+    margin: 0 10px;
+}
+
+#footer-sns > a > img {
+    width: 50px;
+}
+
+/*コピーライト*/
+#footer-cp {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color: #fefefe;
+    font-size: 10px;
+}
+}
+
+
+/*===================
+スマホ用スタイル
+===================*/
+
+@media screen and (max-width: 767px) {
+
+    /* 横幅設定 */
+body {
+    min-width: 375px;
+    margin: 0;
+}
+
+/* ヘッダー */
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #004d3b;
+    width: 100%;
+}
+
+/* ロゴ */
+#logo {
+    font-size: 20px;
+    text-align: left;
+    padding: 10px 0px 10px 15px;
+    color: #fefefe;
+    text-decoration-line: none;
+}
+
+/*PC用ナビゲーション非表示*/
+#nav-pc {
+    display: none;
+}
+
+/* ハンバーガーメニュー */
+#menu-sp {
+    float: right;
+    padding: 0;
+}
+
+/* スマホ用ナビゲーションの表示切替 */
+/* 初期状態、レイアウトと非表示設定 */
+#nav-sp {
+    background-color: #004d3b;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 100;
+}
+
+/* ×ボタン */
+#close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* ナビゲーションのリンクの装飾設定 */
+#nav-sp > a {
+    display: block;
+}
+
+#nav-sp > a:link {
+    color: #fefefe;
+}
+
+#nav-sp > a:visited {
+    color: #fefefe;
+}
+
+#nav-sp > a:hover {
+    color: #fefefe;
+    text-decoration: underline;
+}
+
+#nav-sp > a:active {
+    color: #fefefe;
+}
+
+#nav-sp > .menu {
+    text-decoration: none;
+    display: block;
+    margin: 10px 20px 0 20px;
+    height: 35px;
+    font-size: 20px;
+    background-image: url("images/arrow.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+#sns {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+#sns > a {
+    margin-right: 30px;
+}
+
+#sns > a > img {
+    width: 40px;
+}
+
+/* メインビジュアル */
+#main-visual {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.slider {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.slider > h1 {
+    position: absolute;
+    color: #fefefe;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.main-visual-img {
+    width: 100%;
+}
+
+/*丸太のタイトル*/
+.maruta-title {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.index-h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fefefe;
+}
+
+.index-h2-img {
+    max-width: 300px;
+}
+
+
+
+/*ショップ紹介*/
+#overview {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.index-p {
+    position: absolute;
+    padding: 100px 50px;
+    font-size: 15px;
+    height: 1000px;
+}
+
+
+}
+
+
+/*新着情報*/
+#introduction {
+    position: relative;
+    top: 0;
+    left: 0;
+    
+}
+
+
+/* 昆虫紹介*/
+#introduction-2 {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
